@@ -15,7 +15,7 @@ client = MinerUClient(
     vllm_llm=llm
 )
 
-image = Image.open("input/b01.jpg")
+image = Image.open("input/image.jpg")
 extracted_blocks = client.two_step_extract(image)
 
 df = pd.DataFrame(extracted_blocks)
